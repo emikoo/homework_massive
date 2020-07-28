@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun initViews(){
+    private fun initViews() {
         val etFirst = findViewById<EditText>(R.id.etFirst)
         val etSecond = findViewById<EditText>(R.id.etSecond)
         val etThird = findViewById<EditText>(R.id.etThird)
@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
         val btnGo = findViewById<Button>(R.id.btnGo)
     }
 
-    private fun initShowFirst(){
+    private fun initShowFirst() {
         etFirst.setText(massive[0].toString())
         etSecond.setText(massive[1].toString())
         etThird.setText(massive[2].toString())
