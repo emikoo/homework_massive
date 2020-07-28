@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_style"
+        android:backgroundTint="@color/colorBtn"
+        android:padding="40dp"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="113dp"
+        android:text="@string/tv"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTv"
+        app:layout_constraintBottom_toTopOf="@id/etFirst"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/underTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/under_title"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/colorTv"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/formula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/style"
+        android:text="@string/formula"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/colorBackground"
+        android:textSize="35sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/underTitle"
+        app:layout_constraintBottom_toTopOf="@id/etFirst"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/etFirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/et_style"
+        android:backgroundTint="@color/colorEt"
+        android:hint="@string/r"
+        android:padding="1dp"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/formula"
+        app:layout_constraintBottom_toTopOf="@+id/tvFirst"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="169dp" />
+
+    <TextView
+        android:id="@+id/tvFirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etFirst"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/answer"
+        android:textSize="30sp"
+        android:background="@drawable/et_style"
+        android:backgroundTint="@color/colorTv"
+        />
+
+    <EditText
+        android:id="@+id/etSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvFirst"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/r"
+        android:textSize="30sp"
+        android:background="@drawable/et_style"
+        android:backgroundTint="@color/colorEt"
+        android:padding="3dp"
+        />
+
+    <TextView
+        android:id="@+id/tvSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etSecond"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/answer"
+        android:textSize="30sp"
+        android:background="@drawable/et_style"
+        android:backgroundTint="@color/colorTv"
+        />
+
+    <EditText
+    android:id="@+id/etThird"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/tvSecond"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:hint="@string/r"
+    android:textSize="30sp"
+    android:background="@drawable/et_style"
+    android:backgroundTint="@color/colorEt"
+    android:padding="3dp"
+    />
+
+    <TextView
+        android:id="@+id/tvThird"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etThird"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/answer"
+        android:textSize="30sp"
+        android:background="@drawable/et_style"
+        android:backgroundTint="@color/colorTv"
+        />
+
+    <EditText
+        android:id="@+id/etFourth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvThird"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/r"
+        android:textSize="30sp"
+        android:background="@drawable/et_style"
+        android:backgroundTint="@color/colorEt"
+        android:padding="3dp"
+        />
+
+    <TextView
+        android:id="@+id/tvFourth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etFourth"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/answer"
+        android:textSize="30sp"
+        android:background="@drawable/et_style"
+        android:backgroundTint="@color/colorTv"
+        />
+
+    <EditText
+        android:id="@+id/etFifth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvFourth"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/r"
+        android:textSize="30sp"
+        android:background="@drawable/et_style"
+        android:backgroundTint="@color/colorEt"
+        android:padding="3dp"
+        />
+
+    <TextView
+        android:id="@+id/tvFifth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etFifth"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/answer"
+        android:textSize="30sp"
+        android:background="@drawable/et_style"
+        android:backgroundTint="@color/colorTv"
+        />
+
+    <Button
+        android:id="@+id/btnGo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvFifth"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/style"
+        android:backgroundTint="@color/colorBtn"
+        android:text="@string/go"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTv"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

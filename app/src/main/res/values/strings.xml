@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Collictions</string>
+    <string name="go">Go!</string>
+    <string name="tv">Онлайн расчёт</string>
+    <string name="under_title">Длина окружности</string>
+    <string name="formula">C = 2πR</string>
+    <string name="r">Радиус</string>
+    <string name="answer">Ответ</string>
+</resources>
